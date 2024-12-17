@@ -4,7 +4,7 @@ const InsertMedic = require('./controllers/insertMedic');
 const InsertPaciente = require('./controllers/insertPaciente');
 const InsertTriagem = require('./controllers/insertTriagem');
 const login = require('./controllers/login');
-const port = 3000;
+const port = process.env.PORT || 3000;
 const app = express();
 
 app.use(express.json())
